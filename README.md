@@ -1,1 +1,3 @@
 # Image-classification
+
+Dataset used is tiny-imagenet having 200 classes. I achieved accuracy of 52% with 16 million parameters while using colab. I have used skip connections like resnet. The model has been trained on images of different sizes - 32, 64 and 128. The smaller sizes has been used for two reasons, for less training time and for training the model to look at very small objects. For image augmetation imgaug library has been used. I have used Flilr, CoarseDropout, AdditiveGaussianNoise, GaussianBlur and some others augmentation techniques. I have used ReduceLROnPlateau to reduce learning rate when training data accuracy will get stuck at same value. 
